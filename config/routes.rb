@@ -1,4 +1,8 @@
 Mytutor::Application.routes.draw do
+  
+  devise_for :users
+
+  root :to => "posts#index"
   resources :posts
 
   # The priority is based upon order of creation:
