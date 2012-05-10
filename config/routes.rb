@@ -2,8 +2,17 @@ Mytutor::Application.routes.draw do
   
   devise_for :users
 
-  root :to => "posts#index"
+  root :to => "pages#index"
   resources :posts
+  
+  
+  resources :pages, :only => [:index] do
+    collection do
+      get :about
+    end  
+  end
+  
+  
   
   
   namespace :admin do
