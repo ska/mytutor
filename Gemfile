@@ -23,7 +23,7 @@ gem 'devise'
 gem "omniauth"
 
 group :developement do
-  gem 'annotate'
+  gem 'annotate', '~> 2.4.1.beta' 
 end
 
 
@@ -40,4 +40,4 @@ end
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug19', :require => 'ruby-debug'
