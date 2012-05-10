@@ -4,6 +4,14 @@ Mytutor::Application.routes.draw do
 
   root :to => "posts#index"
   resources :posts
+  
+  
+  namespace :admin do
+    root :to => "users#index"    
+    resources :users
+    
+    
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
