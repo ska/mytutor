@@ -3,16 +3,13 @@ Mytutor::Application.routes.draw do
   devise_for :users
 
   root :to => "pages#index"
-  resources :posts
-  
+  resources :announcements
   
   resources :pages, :only => [:index] do
     collection do
       get :about
     end  
   end
-  
-  
   
   
   namespace :admin do

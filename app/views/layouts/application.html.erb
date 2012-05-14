@@ -10,14 +10,23 @@
 <body id="home">
 <div id="container">
   <div id="header">
-    <h1><a href="index.html">Granite<span>Glass</span></a></h1>		
+    <h1>
+      <%= link_to root_path do %>
+        <span>My</span>TUTOR
+      <% end %>
+    </h1>
+    <% if user_signed_in? %>
+      Ciao <%= current_user.email %>! <%= link_to "Logout", new_user_session_path %>
+    <% else %>
+      <%= link_to "Registrati", new_user_registration_path %> | <%= link_to "Accedi", new_user_session_path %>
+    <% end  %>
   </div>
     
   <div id="body">
     <ul id="nav">
-      <li class="<%= "on" if params[:action] == "index" %> first"><%= link_to 'Home Page', root_path  %> </li>
-      <li class="<%= "on" if params[:action] == "about" %>"><%= link_to 'About', about_pages_path  %></li> 
-      <li><%= link_to 'Home Page', root_path  %></li>
+      <li class="<%= "on" if params[:controller] == "pages" && params[:action] == "index" %> first"><%= link_to 'Home Page', root_path  %> </li>
+      <li class="<%= "on" if params[:controller] == "pages" && params[:action] == "about" %>"><%= link_to 'About', about_pages_path  %></li> 
+      <li class="<%= "on" if params[:controller] == "announcements" && params[:action] == "index" %> first"><%= link_to 'Annunci', announcements_path  %> </li>      
       <li><%= link_to 'Home Page', root_path  %></li>
       <li><%= link_to 'Home Page', root_path  %></li>
     </ul>
@@ -30,8 +39,11 @@
   </div>
 	
   <div id="footer">
-    <p class="left">&copy; 2008 Company name</p>
-    <p class="right">Template by Axel Bartolomei</p>
+    Opzioni debug <br />
+    <% if user_signed_in? %>
+      User mail: <%= current_user.email %><br />
+      User ID: <%= current_user.id %>
+    <% end %>
   </div>	
 </div>	
 </body>

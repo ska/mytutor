@@ -1,0 +1,19 @@
+<h1>Pagina iniziale</h1>
+
+
+<table>
+  <tr>
+    <th colspan="6" style="text-align: center; width: 95%">Gli annunci</th>
+  </tr>
+
+  <% @announcements.each do |announcement| %>
+    <tr class="<%= cycle("even", "odd") %>">
+      <td><%= announcement.id %></td>
+      <td><%= announcement.title %></td>
+      <td><%= announcement.town %></td>
+      <td><%= announcement.postcode %></td>
+      <td><%= announcement.province %></td>
+      <td><%= link_to "Vedi", announcement_path(announcement) %> </td>
+    </tr>    
+  <% end %>    
+</table>

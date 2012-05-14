@@ -1,0 +1,28 @@
+Nuovo Annuncio
+
+
+<div style="text-align: left; padding: 30px;">
+  <%= form_for @announcement do |f| %>
+  
+  <div class="field">    
+    <%= f.label  "Titolo" %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label "Citta'" %><br />
+    <%= f.text_field :town %>
+  </div>
+  <div class="field">
+    <%= f.label "Codice Postale" %><br />
+    <%= f.text_field :postcode %>
+  </div>
+  <div class="field">
+    <%= f.label "Provincia" %><br />
+    <%= f.text_field :province %>
+  </div>    
+  <div class="action">
+    <%= f.submit "Invia annuncio" %>
+  </div>
+  <% end %>
+</div>
+<br clear="all" />

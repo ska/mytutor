@@ -1,0 +1,18 @@
+<h1>Annuncio <%= @announcement.title %></h1>
+<%= @announcement.id %> - <%= @announcement.title %><br />
+<%= @announcement.town %><br />
+<%= @announcement.postcode %><br />
+<%= @announcement.province %><br />
+
+
+<h1>Proprietario info</h1>
+<%= @announcement.user.email %><br />
+
+
+
+
+<h1>Link</h1>
+<%= link_to "Modifica", edit_announcement_path %>
+<%= link_to "Cancella", @announcement, :method => :delete,
+                                 :confirm => "Sicuro?",
+                                 :title => @announcement.title %>
