@@ -16,7 +16,7 @@
       <% end %>
     </h1>
     <% if user_signed_in? %>
-      Ciao <%= current_user.email %>! <%= link_to "Logout", new_user_session_path %>
+      Ciao <%= current_user.email %>! <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
     <% else %>
       <%= link_to "Registrati", new_user_registration_path %> | <%= link_to "Accedi", new_user_session_path %>
     <% end  %>
