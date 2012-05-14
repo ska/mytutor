@@ -2,14 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 
-group :development do
-  gem 'sqlite3', '1.3.5'
-end
-
-group :production do
-  gem 'pg', '0.12.2'
-end
-
+#group :development do
+#  gem 'sqlite3', '1.3.5'
+#end
+#
+#group :production do
+#  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+#  gem 'pg'
+#end
+gem 'pg'
 gem 'heroku'
 
 group :assets do

@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def index
     @title = "Home Page"
     # Iddu vedremo
-    @announcements = Announcement.all
+    #@announcements = Announcement.all
   end
   
   def about

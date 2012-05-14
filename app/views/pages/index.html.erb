@@ -1,15 +1,2 @@
 <h1>Pagina iniziale</h1>
 
-
-<table>
-  <tr>
-    <th colspan="2" style="text-align: center;">Gli annunci</th>
-  </tr>
-
-  <% @announcements.each do |announcement| %>
-    <tr class="<%= cycle("even", "odd") %>">
-      <td><%= announcement.title %></td>
-      <td><%= announcement.province %></td>
-    </tr>    
-  <% end %>    
-</table>

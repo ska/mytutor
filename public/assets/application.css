@@ -1,0 +1,542 @@
+/* line 1, ../../app/assets/stylesheets/application.css.scss */
+html {
+  font-size: 76%;
+}
+
+/* line 2, ../../app/assets/stylesheets/application.css.scss */
+body {
+  background: url(/assets/bg.gif);
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #666;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* headers */
+/* line 14, ../../app/assets/stylesheets/application.css.scss */
+h2, h3, h4, h5, h6 {
+  color: #666;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* line 20, ../../app/assets/stylesheets/application.css.scss */
+h2 {
+  font-size: 1.8em;
+  margin: 25px 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 21, ../../app/assets/stylesheets/application.css.scss */
+h3 {
+  font-size: 1.6em;
+  margin: 25px 0 15px;
+}
+
+/* line 22, ../../app/assets/stylesheets/application.css.scss */
+h4 {
+  font-size: 1.4em;
+  margin: 20px 0 10px;
+}
+
+/* line 23, ../../app/assets/stylesheets/application.css.scss */
+h5 {
+  font-size: 1.2em;
+  margin: 20px 0 5px;
+}
+
+/* line 24, ../../app/assets/stylesheets/application.css.scss */
+h6 {
+  font-size: 1em;
+  margin: 20px 0 0;
+}
+
+/* text */
+/* line 27, ../../app/assets/stylesheets/application.css.scss */
+p {
+  margin: 15px 0;
+}
+
+/* line 28, ../../app/assets/stylesheets/application.css.scss */
+acronym {
+  cursor: help;
+}
+
+/* line 29, ../../app/assets/stylesheets/application.css.scss */
+pre, code, blockquote {
+  margin: 15px 0;
+  border: 1px dashed #ddd;
+  padding: 15px;
+  display: block;
+  background: url(/assets/grey_grad_.jpg) repeat-x 0 -130px;
+  color: #666;
+}
+
+/* line 37, ../../app/assets/stylesheets/application.css.scss */
+blockquote {
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  border: 1px solid #ddd;
+  padding: 0 15px 0 15px;
+  background-color: #eee;
+  min-height: 60px;
+}
+
+/* line 43, ../../app/assets/stylesheets/application.css.scss */
+* html blockquote {
+  height: 60px;
+}
+
+/* links */
+/* line 46, ../../app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: underline;
+  color: #ff8b00;
+  outline: none;
+}
+
+/* line 47, ../../app/assets/stylesheets/application.css.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* images */
+/* line 50, ../../app/assets/stylesheets/application.css.scss */
+img {
+  border: 10px solid #ddd;
+  padding: 1px;
+  background-color: #fff;
+}
+
+/* line 52, ../../app/assets/stylesheets/application.css.scss */
+a:hover img {
+  border-color: #eee;
+}
+
+/* line 53, ../../app/assets/stylesheets/application.css.scss */
+img.right {
+  margin: 0 0 20px 20px;
+}
+
+/* line 54, ../../app/assets/stylesheets/application.css.scss */
+img.left {
+  margin: 0 20px 20px 0;
+}
+
+/* lists */
+/* line 57, ../../app/assets/stylesheets/application.css.scss */
+ul, ol, dl {
+  margin: 15px 0 15px 20px;
+  padding: 0;
+}
+
+/* line 58, ../../app/assets/stylesheets/application.css.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 59, ../../app/assets/stylesheets/application.css.scss */
+ul ul, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 60, ../../app/assets/stylesheets/application.css.scss */
+ol {
+  margin-left: 25px;
+}
+
+/* line 61, ../../app/assets/stylesheets/application.css.scss */
+dl {
+  margin-left: 0;
+}
+
+/* line 62, ../../app/assets/stylesheets/application.css.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* line 63, ../../app/assets/stylesheets/application.css.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 64, ../../app/assets/stylesheets/application.css.scss */
+dl dt, li {
+  color: #ff8b00;
+}
+
+/* line 65, ../../app/assets/stylesheets/application.css.scss */
+li span {
+  color: #333;
+}
+
+/* tables */
+/* line 68, ../../app/assets/stylesheets/application.css.scss */
+table {
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+/* line 70, ../../app/assets/stylesheets/application.css.scss */
+table th,
+table td {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* line 71, ../../app/assets/stylesheets/application.css.scss */
+table thead th {
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  background-color: #ff8b00;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.1em;
+  border: 1px solid #ff8b00;
+}
+
+/* line 79, ../../app/assets/stylesheets/application.css.scss */
+table tbody th {
+  background-color: #ddd;
+}
+
+/* line 81, ../../app/assets/stylesheets/application.css.scss */
+table tbody th,
+table tbody td {
+  border-top: 1px solid #ddd;
+}
+
+/* forms */
+/* line 84, ../../app/assets/stylesheets/application.css.scss */
+form {
+  border: 1px solid #ddd;
+  padding: 0;
+  margin: 25px 0;
+}
+
+/* line 85, ../../app/assets/stylesheets/application.css.scss */
+form fieldset {
+  border: 0;
+  padding: 10px 25px 15px;
+  margin: 0;
+}
+
+/* line 86, ../../app/assets/stylesheets/application.css.scss */
+form fieldset legend {
+  display: none;
+}
+
+/* line 87, ../../app/assets/stylesheets/application.css.scss */
+form p {
+  height: 1%;
+}
+
+/* line 88, ../../app/assets/stylesheets/application.css.scss */
+form p:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 89, ../../app/assets/stylesheets/application.css.scss */
+form p label {
+  font-size: 1em;
+  color: #333;
+  float: left;
+  display: block;
+  width: 30%;
+  margin-right: 20px;
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* line 99, ../../app/assets/stylesheets/application.css.scss */
+form p input,
+form p select,
+form p textarea {
+  font-size: 1em;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #eee;
+  width: 55%;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+/* line 108, ../../app/assets/stylesheets/application.css.scss */
+form p select {
+  width: 57.5%;
+}
+
+/* line 109, ../../app/assets/stylesheets/application.css.scss */
+form ul.fieldlist {
+  margin: -30px 0 10px 33%;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 110, ../../app/assets/stylesheets/application.css.scss */
+form ul.fieldlist li {
+  color: #333;
+  padding: 0 30px 5px 0;
+  white-space: nowrap;
+}
+
+/* line 112, ../../app/assets/stylesheets/application.css.scss */
+form input.btn,
+a.btn {
+  width: auto;
+  overflow: visible;
+  border: 0;
+  background: #ff8b00 url(/assets/image_.jpg) repeat-x 0 -30px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 123, ../../app/assets/stylesheets/application.css.scss */
+a.btn:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* horizontal rule */
+/* line 126, ../../app/assets/stylesheets/application.css.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  color: #ddd;
+  margin: 30px 0 0;
+}
+
+/* classes */
+/* line 129, ../../app/assets/stylesheets/application.css.scss */
+.left {
+  float: left;
+}
+
+/* line 130, ../../app/assets/stylesheets/application.css.scss */
+.right {
+  float: right;
+}
+
+/* line 131, ../../app/assets/stylesheets/application.css.scss */
+.hide {
+  display: none;
+}
+
+/* list of links */
+/* line 134, ../../app/assets/stylesheets/application.css.scss */
+ul.links {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 135, ../../app/assets/stylesheets/application.css.scss */
+ul.links li {
+  margin: 5px 0;
+}
+
+/* list of images */
+/* line 138, ../../app/assets/stylesheets/application.css.scss */
+ul.images {
+  margin-left: -15px;
+  margin-bottom: 0;
+  padding: 15px 0 0;
+  list-style-type: none;
+  height: 1%;
+  width: 104%;
+}
+
+/* line 139, ../../app/assets/stylesheets/application.css.scss */
+* html ul.images {
+  width: 100%;
+}
+
+/* line 140, ../../app/assets/stylesheets/application.css.scss */
+ul.images:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 141, ../../app/assets/stylesheets/application.css.scss */
+ul.images li {
+  float: left;
+  margin: 0;
+  padding: 0 0 15px 15px;
+}
+
+/* line 142, ../../app/assets/stylesheets/application.css.scss */
+ul.images li img {
+  vertical-align: middle;
+}
+
+/*------------------------------------------------------------*
+**  Container
+**------------------------------------------------------------*/
+/* line 147, ../../app/assets/stylesheets/application.css.scss */
+#container {
+  margin: 0 auto;
+  width: 990px;
+}
+
+/* line 152, ../../app/assets/stylesheets/application.css.scss */
+#header {
+  background: url(/assets/header_.png);
+  background-repeat: no-repeat;
+}
+
+/* Logo */
+/* line 158, ../../app/assets/stylesheets/application.css.scss */
+#header h1 {
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: #ff8b00;
+  margin: 0;
+  padding: 40px 0;
+  letter-spacing: -1px;
+}
+
+/* line 167, ../../app/assets/stylesheets/application.css.scss */
+#header h1 a {
+  text-decoration: none;
+  color: #ff8b00;
+}
+
+/* line 168, ../../app/assets/stylesheets/application.css.scss */
+#header h1 a:hover {
+  text-decoration: none;
+}
+
+/* line 169, ../../app/assets/stylesheets/application.css.scss */
+#header h1 span {
+  color: #fff;
+}
+
+/*------------------------------------------------------------*
+**  Body
+**------------------------------------------------------------*/
+/* line 175, ../../app/assets/stylesheets/application.css.scss */
+#body {
+  padding: 20px;
+  background: #222222 url(/assets/body_.png) repeat-x;
+}
+
+/*------------------------------------------------------------*
+**  Navigation
+**------------------------------------------------------------*/
+/* line 180, ../../app/assets/stylesheets/application.css.scss */
+ul#nav {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid #535457;
+  border-bottom: 1px solid #050A10;
+  height: 1%;
+}
+
+/* line 188, ../../app/assets/stylesheets/application.css.scss */
+ul#nav:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 195, ../../app/assets/stylesheets/application.css.scss */
+ul#nav li {
+  /* this width needs changing 
+  depending on the amount of links. 
+  Divide 100% by the amount of links 
+  and set the value here. 
+  e.g. 5 links: 100/5 = 20% */
+  width: 20%;
+  float: left;
+  margin: 0;
+  font-size: 1.1em;
+  background: #3c3c3c url(/assets/nav_over_.png) no-repeat 50% 100%;
+}
+
+/* line 207, ../../app/assets/stylesheets/application.css.scss */
+ul#nav li a {
+  display: block;
+  background: #3c3c3c url(/assets/nav_.png) repeat-x 50% 100%;
+  padding: 11px 0 14px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #535457;
+  border-left: 1px solid #050A10;
+  position: relative;
+}
+
+/* line 217, ../../app/assets/stylesheets/application.css.scss */
+ul#nav li.first a {
+  border-left-color: #535457;
+}
+
+/* line 218, ../../app/assets/stylesheets/application.css.scss */
+ul#nav li a:hover {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 220, ../../app/assets/stylesheets/application.css.scss */
+ul#nav li.on a,
+ul#nav li.on a:hover {
+  background-image: url(/assets/nav_on1_.png);
+}
+
+/*------------------------------------------------------------*
+**  Content
+**------------------------------------------------------------*/
+/* line 225, ../../app/assets/stylesheets/application.css.scss */
+#content {
+  background-color: #fff;
+  padding: 2px;
+  text-align: left;
+  min-height: 300px;
+}
+
+/* line 226, ../../app/assets/stylesheets/application.css.scss */
+#content div {
+  background: url(/assets/content_.png) repeat-x;
+  padding: 1px 20px 15px;
+}
+
+/*------------------------------------------------------------*
+**  Footer
+**------------------------------------------------------------*/
+/* line 232, ../../app/assets/stylesheets/application.css.scss */
+#footer {
+  padding: 0 20px;
+  background-color: #222;
+  height: 1%;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: -20px;
+}
+
+/* line 240, ../../app/assets/stylesheets/application.css.scss */
+#footer:after {
+  content: ".";
+  clear: both;
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
